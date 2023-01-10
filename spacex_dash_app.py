@@ -11,8 +11,6 @@ spacex_df = pd.read_csv("spacex_launch_dash.csv")
 max_payload = spacex_df['Payload Mass (kg)'].max()
 min_payload = spacex_df['Payload Mass (kg)'].min()
 
-#print(spacex_df['Launch Site'].unique())
-
 # Create a dash application
 app = dash.Dash(__name__)
 
